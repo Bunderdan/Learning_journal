@@ -1,0 +1,149 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+li{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.align-right{
+    margin-left: auto;
+    gap: 30px;
+}
+
+li img{
+    margin: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.main-section{
+    background-image: url(/images/hero-image-1.png);
+    background-size: cover;
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.main-section a{
+    margin: 0px;
+}
+
+.blogs-section{
+    display: grid;
+    padding: 0px 20px;
+}
+
+a{
+    text-decoration: none;
+    margin: 35px 0px;
+}
+
+img{
+    width: 100%;
+
+
+}
+
+footer{
+    height: 105px;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* <----- TYPOGRAPHY -----> */
+
+h1 {
+    font-size: 2rem;
+    color: #151515;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #151515;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #505050;
+    line-height: 1.4em;
+}
+
+li h1{
+    color: #151515;
+    font-size: 1.2rem;
+}
+
+li h2{
+    font-size: 1rem;
+    font-weight:600
+}
+
+footer h1{
+    color: white;
+    font-size: 1rem;
+}
+
+footer h2{
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.white{
+    color: white;
+}
+
+.blogs-header p{
+    max-width: 540px;
+}
+
+/* <----- @MEDIA -----> */
+
+@media (min-width: 768px) {
+    .blogs-section{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .blogs-section{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .main-section{
+        height: 500px;
+    }
+
+    .blogs-header h1{
+        font-size: 2.5rem;
+    }
+    .blogs-header p{
+        font-size: 1.3rem;
+        max-width: 30em;
+    }
+}
